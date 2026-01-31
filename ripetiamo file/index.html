@@ -1,14 +1,208 @@
-<p>&lt;!DOCTYPE html&gt;<br />&lt;html lang="it" class="scroll-smooth"&gt;<br />&lt;head&gt;<br />&nbsp; &nbsp; &lt;meta charset="UTF-8"&gt;<br />&nbsp; &nbsp; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br />&nbsp; &nbsp; &lt;title&gt;Ripetiamo. | Elite Tutoring &amp; Metodo&lt;/title&gt;<br />&nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &lt;link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&amp;family=Inter:wght@300;400;600&amp;family=Poppins:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"&gt;<br />&nbsp; &nbsp; &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;<br />&nbsp; &nbsp; &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p>&nbsp; &nbsp; &lt;script&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; tailwind.config = {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; theme: {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; extend: {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colors: {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bg: '#050505',<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; primary: '#8A2BE2',<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cyan: '#00f3ff',<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warning: '#fbbf24'<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &lt;/script&gt;</p>
-<p>&nbsp; &nbsp; &lt;style&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }<br />&nbsp; &nbsp; &nbsp; &nbsp; .tech-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(circle at 50% 50%, #0a0a0a 0%, #050505 100%); }<br />&nbsp; &nbsp; &nbsp; &nbsp; .blob { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(138, 43, 226, 0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(80px); z-index: -1; animation: float 20s infinite alternate; }<br />&nbsp; &nbsp; &nbsp; &nbsp; @keyframes float { from { transform: translate(0, 0); } to { transform: translate(10%, 10%); } }<br />&nbsp; &nbsp; &nbsp; &nbsp; .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }<br />&nbsp; &nbsp; &nbsp; &nbsp; .glow-hover:hover { border-color: #8A2BE2; box-shadow: 0 0 30px rgba(138, 43, 226, 0.4); transform: translateY(-5px); background: rgba(138, 43, 226, 0.08); }<br />&nbsp; &nbsp; &nbsp; &nbsp; .glow-hover-cyan:hover { border-color: #00f3ff; box-shadow: 0 0 30px rgba(0, 243, 255, 0.3); transform: translateY(-5px); background: rgba(0, 243, 255, 0.08); }<br />&nbsp; &nbsp; &nbsp; &nbsp; .hero-title { line-height: 1.3 !important; padding: 20px 0; }<br />&nbsp; &nbsp; &nbsp; &nbsp; .gradient-text { background: linear-gradient(90deg, #8A2BE2, #00f3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }<br />&nbsp; &nbsp; &nbsp; &nbsp; .tech-input { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; transition: all 0.3s ease; }<br />&nbsp; &nbsp; &nbsp; &nbsp; .ribbon { background: #fbbf24; color: black; font-weight: 900; transform: rotate(45deg); position: absolute; top: 15px; right: -35px; width: 120px; text-align: center; font-size: 10px; text-transform: uppercase; }<br />&nbsp; &nbsp; &lt;/style&gt;<br />&lt;/head&gt;<br />&lt;body&gt;</p>
-<p>&nbsp; &nbsp; &lt;div class="tech-bg"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="blob" style="top: -10%; left: -10%;"&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="blob" style="bottom: 5%; right: -5%; background: radial-gradient(circle, rgba(0, 243, 255, 0.08) 0%, transparent 70%);"&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &lt;/div&gt;</p>
-<p>&nbsp; &nbsp; &lt;nav class="fixed w-full z-50 py-4 bg-black/80 backdrop-blur-md border-b border-white/5"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="max-w-7xl mx-auto px-6 flex justify-between items-center"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#" class="text-2xl font-black tracking-tighter"&gt;Ripetiamo&lt;span class="text-primary"&gt;.&lt;/span&gt;&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="hidden md:flex gap-8 text-sm font-medium text-gray-400"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#metodo" class="hover:text-white transition-colors"&gt;Metodo&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#reparti" class="hover:text-white transition-colors"&gt;Reparti&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#recensioni" class="hover:text-white transition-colors"&gt;Recensioni&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#hiring" class="hover:text-white transition-colors"&gt;Hiring&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#contact-area" class="bg-white text-black px-5 py-2 rounded-lg text-xs font-bold uppercase hover:bg-primary hover:text-white transition-all"&gt;Contattaci&lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &lt;/nav&gt;</p>
-<p>&nbsp; &nbsp; &lt;header class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="mb-6 px-5 py-2 border border-primary/30 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-[0.2em] animate-pulse"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tutoring di nuova generazione<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class="hero-title text-5xl md:text-8xl font-black mb-4 tracking-tight"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Metodo, non &lt;br&gt;&lt;span class="gradient-text"&gt;semplici ripetizioni.&lt;/span&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/h1&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-4xl md:text-6xl text-gray-300 mb-12" style="font-family: 'Dancing Script', cursive;"&gt;"Da studenti per studenti"&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="#reparti" class="px-10 py-5 bg-primary text-white rounded-xl font-bold uppercase tracking-wider shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:scale-105 transition-all mb-20"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Esplora il Futuro<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;<br />&nbsp; &nbsp; &lt;/header&gt;</p>
-<p>&nbsp; &nbsp; &lt;section id="metodo" class="py-24 px-6"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="max-w-6xl mx-auto"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="text-center mb-16"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="hero-title text-4xl font-bold mb-4 italic"&gt;Il Metodo &lt;span class="text-primary uppercase"&gt;E-Lite&lt;/span&gt;&lt;/h2&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-gray-400"&gt;Non studiamo di pi&ugrave;, studiamo in modo diverso.&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="glass-panel p-10 rounded-3xl glow-hover"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class="fa-solid fa-brain text-4xl text-primary mb-6"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="text-xl font-bold mb-4 italic"&gt;LOGICA APPLICATA&lt;/h3&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-sm text-gray-400"&gt;Eliminiamo lo studio a memoria. Ti insegniamo a ricostruire le formule partendo dal ragionamento.&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="glass-panel p-10 rounded-3xl glow-hover"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class="fa-solid fa-microchip text-4xl text-primary mb-6"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="text-xl font-bold mb-4 italic"&gt;HUB DIGITALE&lt;/h3&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-sm text-gray-400"&gt;Tablet grafici e lavagne condivise: visualizza i concetti astratti come mai prima d'ora.&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="glass-panel p-10 rounded-3xl glow-hover"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class="fa-solid fa-bolt-lightning text-4xl text-primary mb-6"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="text-xl font-bold mb-4 italic"&gt;MINDSET&lt;/h3&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-sm text-gray-400"&gt;Strategie per superare l'ansia da prestazione e gestire i tempi durante le verifiche e gli esami.&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &lt;/section&gt;</p>
-<p>&nbsp; &nbsp; &lt;section id="reparti" class="py-24 px-6 bg-white/[0.02]"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="max-w-6xl mx-auto"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-4xl font-bold mb-12 text-center italic uppercase tracking-widest"&gt;Reparti &lt;span class="text-primary"&gt;Disponibili&lt;/span&gt;&lt;/h2&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button onclick="toggleReparto('superiori')" class="group glass-panel p-12 rounded-[2.5rem] text-left glow-hover relative overflow-hidden"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="text-4xl font-black uppercase italic group-hover:text-primary transition-colors"&gt;Superiori&lt;/h3&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-gray-500 mt-2 font-medium tracking-widest uppercase text-xs"&gt;Technical &amp; Scientific High School&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class="fa-solid fa-chevron-down absolute bottom-8 right-8 text-2xl opacity-20 group-hover:opacity-100 group-hover:translate-y-2 transition-all"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button onclick="toggleReparto('universita')" class="group glass-panel p-12 rounded-[2.5rem] text-left glow-hover-cyan relative overflow-hidden"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class="text-4xl font-black uppercase italic group-hover:text-cyan transition-colors"&gt;Universit&agrave;&lt;/h3&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-gray-500 mt-2 font-medium tracking-widest uppercase text-xs"&gt;STEM Faculty &amp; Engineering&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class="fa-solid fa-chevron-down absolute bottom-8 right-8 text-2xl opacity-20 group-hover:opacity-100 group-hover:translate-y-2 transition-all"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id="content-superiori" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Matematica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Matematica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Fisica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Fisica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Chimica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Chimica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Informatica')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer italic border-cyan/30"&gt;Informatica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Meccatronica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Meccatronica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Economia')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Economia&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Elettronica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic"&gt;Elettronica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div id="content-universita" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Analisi 1')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase"&gt;Analisi 1&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Algebra')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase"&gt;Algebra&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Fisica 1')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase"&gt;Fisica 1&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div onclick="selectSubject('Informatica')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase"&gt;Informatica&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &lt;/section&gt;</p>
-<p>&nbsp; &nbsp; &lt;section id="recensioni" class="py-24 px-6"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="max-w-6xl mx-auto"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-4xl font-bold mb-8 text-center italic"&gt;FEEDBACK &lt;span class="text-primary"&gt;ELITE&lt;/span&gt;&lt;/h2&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="text-center mb-12"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href="https://script.google.com/macros/s/AKfycbxkSvy9ZXRiEdasAneFE6EodC8svc6ybs_uc1euNUmzUFfAsK8Uszl7Pl43L2rx52Ae7w/exec" target="_blank" class="text-xs font-bold uppercase tracking-widest border border-primary/40 px-6 py-3 rounded-full hover:bg-primary transition-all"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lascia la tua recensione &lt;i class="fa-solid fa-pen-to-square ml-2"&gt;&lt;/i&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="grid grid-cols-1 md:grid-cols-3 gap-8"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="glass-panel p-8 rounded-3xl glow-hover"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="flex text-warning mb-4"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-sm text-gray-400 italic mb-6"&gt;"Non riuscivo a passare Analisi 1 da tre appelli. Con il Metodo E-Lite ho finalmente capito la logica dietro gli integrali. 28 assicurato!"&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="font-bold text-white uppercase text-xs tracking-widest"&gt;Luca B. &lt;span class="text-primary font-black ml-2"&gt;UNI&lt;/span&gt;&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &lt;/section&gt;</p>
-<p>&nbsp; &nbsp; &lt;section id="contact-area" class="py-24 px-6"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class="max-w-xl mx-auto glass-panel p-10 rounded-[2.5rem] shadow-2xl relative glow-hover"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class="text-3xl font-bold mb-2 text-center italic uppercase"&gt;Chiedi info &lt;span class="text-primary"&gt;o prenota&lt;/span&gt;&lt;/h2&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-gray-500 mb-8 text-center text-sm"&gt;Risposta media su WhatsApp: 15 minuti.&lt;/p&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;form action="https://script.google.com/macros/s/AKfycbxkSvy9ZXRiEdasAneFE6EodC8svc6ybs_uc1euNUmzUFfAsK8Uszl7Pl43L2rx52Ae7w/exec" method="POST" class="space-y-4"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="text" name="nome" placeholder="Nome completo" required class="tech-input w-full p-4 rounded-xl"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type="tel" name="telefono" placeholder="Cellulare per contatto rapido" required class="tech-input w-full p-4 rounded-xl"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;select id="materiaSelect" name="tipo_richiesta" class="tech-input w-full p-4 rounded-xl bg-[#0a0a0a]"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value=""&gt;Seleziona la tua esigenza&lt;/option&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value="Superiori"&gt;Richiesta info - Scuole Superiori&lt;/option&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value="Universita"&gt;Richiesta info - Universit&agrave;&lt;/option&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;option value="Prenotazione"&gt;Prenota una lezione di prova&lt;/option&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/select&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;textarea name="messaggio" placeholder="Descrivi brevemente l'argomento o la verifica che ti preoccupa..." class="tech-input w-full p-4 rounded-xl h-32 resize-none"&gt;&lt;/textarea&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type="submit" class="w-full bg-primary py-4 rounded-xl font-black uppercase tracking-[0.2em] hover:shadow-[0_0_30px_rgba(138,43,226,0.5)] transition-all"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Invia Richiesta<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/form&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br />&nbsp; &nbsp; &lt;/section&gt;</p>
-<p>&nbsp; &nbsp; &lt;footer class="py-12 text-center border-t border-white/5 opacity-40"&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; &lt;p class="text-[10px] tracking-[0.4em] uppercase font-black italic"&gt;RIPETIAMO ELITE TUTORING &mdash; &amp;copy; 2026&lt;/p&gt;<br />&nbsp; &nbsp; &lt;/footer&gt;</p>
-<p>&nbsp; &nbsp; &lt;script&gt;<br />&nbsp; &nbsp; &nbsp; &nbsp; function toggleReparto(id) {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const sup = document.getElementById('content-superiori');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const uni = document.getElementById('content-universita');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (id === 'superiori') {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sup.classList.toggle('hidden');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; uni.classList.add('hidden');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!sup.classList.contains('hidden')) sup.scrollIntoView({ behavior: 'smooth', block: 'center' });<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; uni.classList.toggle('hidden');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sup.classList.add('hidden');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!uni.classList.contains('hidden')) uni.scrollIntoView({ behavior: 'smooth', block: 'center' });<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; }</p>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; function selectSubject(name) {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const sel = document.getElementById('materiaSelect');<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(name.includes('Analisi') || name.includes('Fisica 1') || name.includes('Algebra')) {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sel.value = 'Universita';<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sel.value = 'Superiori';<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.getElementById('contact-area').scrollIntoView({ behavior: 'smooth' });<br />&nbsp; &nbsp; &nbsp; &nbsp; }<br />&nbsp; &nbsp; &lt;/script&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</p>
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripetiamo. | Elite Tutoring & Metodo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#050505',
+                        primary: '#8A2BE2',
+                        cyan: '#00f3ff',
+                        warning: '#fbbf24'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .tech-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(circle at 50% 50%, #0a0a0a 0%, #050505 100%); }
+        .blob { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(138, 43, 226, 0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(80px); z-index: -1; animation: float 20s infinite alternate; }
+        @keyframes float { from { transform: translate(0, 0); } to { transform: translate(10%, 10%); } }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .glow-hover:hover { border-color: #8A2BE2; box-shadow: 0 0 30px rgba(138, 43, 226, 0.4); transform: translateY(-5px); background: rgba(138, 43, 226, 0.08); }
+        .glow-hover-cyan:hover { border-color: #00f3ff; box-shadow: 0 0 30px rgba(0, 243, 255, 0.3); transform: translateY(-5px); background: rgba(0, 243, 255, 0.08); }
+        .hero-title { line-height: 1.3 !important; padding: 20px 0; }
+        .gradient-text { background: linear-gradient(90deg, #8A2BE2, #00f3ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tech-input { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); color: white; transition: all 0.3s ease; }
+        .ribbon { background: #fbbf24; color: black; font-weight: 900; transform: rotate(45deg); position: absolute; top: 15px; right: -35px; width: 120px; text-align: center; font-size: 10px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="tech-bg">
+        <div class="blob" style="top: -10%; left: -10%;"></div>
+        <div class="blob" style="bottom: 5%; right: -5%; background: radial-gradient(circle, rgba(0, 243, 255, 0.08) 0%, transparent 70%);"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 py-4 bg-black/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-2xl font-black tracking-tighter">Ripetiamo<span class="text-primary">.</span></a>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#metodo" class="hover:text-white transition-colors">Metodo</a>
+                <a href="#reparti" class="hover:text-white transition-colors">Reparti</a>
+                <a href="#recensioni" class="hover:text-white transition-colors">Recensioni</a>
+                <a href="#hiring" class="hover:text-white transition-colors">Hiring</a>
+            </div>
+            <a href="#contact-area" class="bg-white text-black px-5 py-2 rounded-lg text-xs font-bold uppercase hover:bg-primary hover:text-white transition-all">Contattaci</a>
+        </div>
+    </nav>
+
+    <header class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center">
+        <div class="mb-6 px-5 py-2 border border-primary/30 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-[0.2em] animate-pulse">
+            Tutoring di nuova generazione
+        </div>
+        <h1 class="hero-title text-5xl md:text-8xl font-black mb-4 tracking-tight">
+            Metodo, non <br><span class="gradient-text">semplici ripetizioni.</span>
+        </h1>
+        <p class="text-4xl md:text-6xl text-gray-300 mb-12" style="font-family: 'Dancing Script', cursive;">"Da studenti per studenti"</p>
+        <a href="#reparti" class="px-10 py-5 bg-primary text-white rounded-xl font-bold uppercase tracking-wider shadow-[0_0_30px_rgba(138,43,226,0.3)] hover:scale-105 transition-all mb-20">
+            Esplora il Futuro
+        </a>
+    </header>
+
+    <section id="metodo" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="hero-title text-4xl font-bold mb-4 italic">Il Metodo <span class="text-primary uppercase">E-Lite</span></h2>
+                <p class="text-gray-400">Non studiamo di più, studiamo in modo diverso.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-panel p-10 rounded-3xl glow-hover">
+                    <i class="fa-solid fa-brain text-4xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">LOGICA APPLICATA</h3>
+                    <p class="text-sm text-gray-400">Eliminiamo lo studio a memoria. Ti insegniamo a ricostruire le formule partendo dal ragionamento.</p>
+                </div>
+                <div class="glass-panel p-10 rounded-3xl glow-hover">
+                    <i class="fa-solid fa-microchip text-4xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">HUB DIGITALE</h3>
+                    <p class="text-sm text-gray-400">Tablet grafici e lavagne condivise: visualizza i concetti astratti come mai prima d'ora.</p>
+                </div>
+                <div class="glass-panel p-10 rounded-3xl glow-hover">
+                    <i class="fa-solid fa-bolt-lightning text-4xl text-primary mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 italic">MINDSET</h3>
+                    <p class="text-sm text-gray-400">Strategie per superare l'ansia da prestazione e gestire i tempi durante le verifiche e gli esami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reparti" class="py-24 px-6 bg-white/[0.02]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center italic uppercase tracking-widest">Reparti <span class="text-primary">Disponibili</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <button onclick="toggleReparto('superiori')" class="group glass-panel p-12 rounded-[2.5rem] text-left glow-hover relative overflow-hidden">
+                    <h3 class="text-4xl font-black uppercase italic group-hover:text-primary transition-colors">Superiori</h3>
+                    <p class="text-gray-500 mt-2 font-medium tracking-widest uppercase text-xs">Technical & Scientific High School</p>
+                    <i class="fa-solid fa-chevron-down absolute bottom-8 right-8 text-2xl opacity-20 group-hover:opacity-100 group-hover:translate-y-2 transition-all"></i>
+                </button>
+                <button onclick="toggleReparto('universita')" class="group glass-panel p-12 rounded-[2.5rem] text-left glow-hover-cyan relative overflow-hidden">
+                    <h3 class="text-4xl font-black uppercase italic group-hover:text-cyan transition-colors">Università</h3>
+                    <p class="text-gray-500 mt-2 font-medium tracking-widest uppercase text-xs">STEM Faculty & Engineering</p>
+                    <i class="fa-solid fa-chevron-down absolute bottom-8 right-8 text-2xl opacity-20 group-hover:opacity-100 group-hover:translate-y-2 transition-all"></i>
+                </button>
+            </div>
+            <div id="content-superiori" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div onclick="selectSubject('Matematica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Matematica</div>
+                <div onclick="selectSubject('Fisica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Fisica</div>
+                <div onclick="selectSubject('Chimica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Chimica</div>
+                <div onclick="selectSubject('Informatica')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer italic border-cyan/30">Informatica</div>
+                <div onclick="selectSubject('Meccatronica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Meccatronica</div>
+                <div onclick="selectSubject('Economia')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Economia</div>
+                <div onclick="selectSubject('Elettronica')" class="glass-panel p-5 rounded-2xl text-center glow-hover font-bold cursor-pointer italic">Elettronica</div>
+            </div>
+            <div id="content-universita" class="hidden grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div onclick="selectSubject('Analisi 1')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase">Analisi 1</div>
+                <div onclick="selectSubject('Algebra')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase">Algebra</div>
+                <div onclick="selectSubject('Fisica 1')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase">Fisica 1</div>
+                <div onclick="selectSubject('Informatica')" class="glass-panel p-5 rounded-2xl text-center glow-hover-cyan font-bold cursor-pointer border-cyan/20 italic uppercase">Informatica</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recensioni" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center italic">FEEDBACK <span class="text-primary">ELITE</span></h2>
+            
+            <div class="text-center mb-12">
+                <a href="https://script.google.com/macros/s/AKfycbxkSvy9ZXRiEdasAneFE6EodC8svc6ybs_uc1euNUmzUFfAsK8Uszl7Pl43L2rx52Ae7w/exec" target="_blank" class="text-xs font-bold uppercase tracking-widest border border-primary/40 px-6 py-3 rounded-full hover:bg-primary transition-all">
+                    Lascia la tua recensione <i class="fa-solid fa-pen-to-square ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-panel p-8 rounded-3xl glow-hover">
+                    <div class="flex text-warning mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="text-sm text-gray-400 italic mb-6">"Non riuscivo a passare Analisi 1 da tre appelli. Con il Metodo E-Lite ho finalmente capito la logica dietro gli integrali. 28 assicurato!"</p>
+                    <p class="font-bold text-white uppercase text-xs tracking-widest">Luca B. <span class="text-primary font-black ml-2">UNI</span></p>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact-area" class="py-24 px-6">
+        <div class="max-w-xl mx-auto glass-panel p-10 rounded-[2.5rem] shadow-2xl relative glow-hover">
+            <h2 class="text-3xl font-bold mb-2 text-center italic uppercase">Chiedi info <span class="text-primary">o prenota</span></h2>
+            <p class="text-gray-500 mb-8 text-center text-sm">Risposta media su WhatsApp: 15 minuti.</p>
+            
+            <form action="https://script.google.com/macros/s/AKfycbxkSvy9ZXRiEdasAneFE6EodC8svc6ybs_uc1euNUmzUFfAsK8Uszl7Pl43L2rx52Ae7w/exec" method="POST" class="space-y-4">
+                <input type="text" name="nome" placeholder="Nome completo" required class="tech-input w-full p-4 rounded-xl">
+                <input type="tel" name="telefono" placeholder="Cellulare per contatto rapido" required class="tech-input w-full p-4 rounded-xl">
+                
+                <select id="materiaSelect" name="tipo_richiesta" class="tech-input w-full p-4 rounded-xl bg-[#0a0a0a]">
+                    <option value="">Seleziona la tua esigenza</option>
+                    <option value="Superiori">Richiesta info - Scuole Superiori</option>
+                    <option value="Universita">Richiesta info - Università</option>
+                    <option value="Prenotazione">Prenota una lezione di prova</option>
+                </select>
+                
+                <textarea name="messaggio" placeholder="Descrivi brevemente l'argomento o la verifica che ti preoccupa..." class="tech-input w-full p-4 rounded-xl h-32 resize-none"></textarea>
+                
+                <button type="submit" class="w-full bg-primary py-4 rounded-xl font-black uppercase tracking-[0.2em] hover:shadow-[0_0_30px_rgba(138,43,226,0.5)] transition-all">
+                    Invia Richiesta
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-white/5 opacity-40">
+        <p class="text-[10px] tracking-[0.4em] uppercase font-black italic">RIPETIAMO ELITE TUTORING — &copy; 2026</p>
+    </footer>
+
+    <script>
+        function toggleReparto(id) {
+            const sup = document.getElementById('content-superiori');
+            const uni = document.getElementById('content-universita');
+            if (id === 'superiori') {
+                sup.classList.toggle('hidden');
+                uni.classList.add('hidden');
+                if(!sup.classList.contains('hidden')) sup.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                uni.classList.toggle('hidden');
+                sup.classList.add('hidden');
+                if(!uni.classList.contains('hidden')) uni.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function selectSubject(name) {
+            const sel = document.getElementById('materiaSelect');
+            if(name.includes('Analisi') || name.includes('Fisica 1') || name.includes('Algebra')) {
+                sel.value = 'Universita';
+            } else {
+                sel.value = 'Superiori';
+            }
+            document.getElementById('contact-area').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
